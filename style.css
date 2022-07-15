@@ -1,0 +1,230 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #6bcbc4;
+    align-items: center;
+}
+header h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff4f4;
+}
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+.logo {
+    width: 100%; 
+    padding: 1%;
+    text-align: center;
+    background-color: #fff4f4;
+}
+nav {
+    background-color: #6bcbc4;
+    /* height: 60px; */
+    /* width: 100%;  */
+    /* padding: 1%; */
+    /* text-align: left; */
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap; 
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #fff4f4;
+}
+html {
+    scroll-behavior: smooth;
+}
+a:hover {
+    color: #edc1d3;
+}
+/* ul {
+    width: 50%; 
+    margin-left: auto;
+} */
+li{
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16pt;
+    padding: 5px 10px;
+}
+/* li:hover{
+    color: #edc1d3;
+} */
+.heroImg {
+    height: 650px;
+    padding: 25px;
+    background-color: #fff4f4;
+}
+section img {
+    box-shadow: 7px 12px #edc1d3;
+}
+.contactMe {
+    background-color: #fff4f4;
+    height: 250px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 14pt;
+}
+.contactMe h1 {
+    font-size: 20pt;
+    text-decoration: underline;
+    margin: 0 auto;
+    padding-top: 50pt;
+}
+.contactMe img {
+    box-shadow: none;
+    height: 40px;
+    cursor: pointer;
+}
+.content {
+    width: 500px;
+    margin: 0 auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14pt;
+    text-align: center;
+}
+button {
+    width: 200px;
+    height: 50px;
+    font-size: 15pt;
+    background-color: #fff4f4;
+    box-shadow: 5px 9px;
+    font-size: 18px;
+}
+button:hover{
+    color: #edc1d3;
+    cursor: pointer;
+}
+.mySkills {
+    background-color: #fff4f4;
+    /* display: flex; */
+    /* height: 450pt; */
+}
+.mySkills h1 {
+    text-align: center;
+    font-size: 20pt;
+    margin: 0 auto;
+    text-decoration: underline;
+}
+#skillsContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.flexContainer {
+    display: flex;
+    width: 33%; 
+    padding: 30pt;
+    margin: 0pt;
+    flex-direction: column;
+    align-items: center;
+}
+.flexContainer h3 {
+    font-size: 18pt;
+    text-align: center;
+}
+.flexContainer p {
+    font-size: 14pt;
+    width: 50%;
+}
+.workGrid {
+    background-color: #fff4f4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* display: grid;
+    grid-template-areas: 'myArea myArea myArea myArea';
+    grid-template-rows: 350px 350px;
+    grid-template-columns: auto auto auto auto;
+    height: 550pt; */
+}  
+.myWork h1 {
+    background-color: #fff4f4;
+    text-align: center;
+    font-size: 20pt;
+    margin: 0 auto;
+    text-decoration: underline;
+}
+.workGrid h4 {
+    font-size: 18pt;
+}
+.workGrid p {
+    font-size: 14pt;
+}
+.workGrid img {
+    box-shadow: none;
+}
+.myWork h3 {
+    text-align: end;
+    margin: 0 auto;
+    background-color: #fff4f4;
+    padding-right: 60pt;
+    font-size: 16pt;
+}
+.myWork h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.workGrid button {
+    font-size: 14pt;
+    width: 140pt;
+    height: 30pt;
+} 
+footer {
+    background-color: #373738;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+footer ul{
+    display: inline-block;
+    vertical-align: top;
+}
+footer li{
+    padding: 5px;
+}
+.preloader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100000;
+    background-color: #fff4f4;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+.preloader img {
+    animation: spin 3s ease;
+    width: 150px;
+    margin: 0 auto;
+}
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+  }
+@media only screen and (max-width: 600px){
+    .flexContainer {
+        flex-direction: column;
+    width: 100%;
+    }
+    #categoryGrid {
+        grid-template-rows: 300px 300px 300px 300px; 
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "bookcases"
+            "bedroom"
+            "patio"
+            "couches";
+    }
+}
