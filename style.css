@@ -93,6 +93,7 @@ button {
     background-color: #fff4f4;
     box-shadow: 5px 9px;
     font-size: 18px;
+    color: black;
 }
 button:hover{
     color: #edc1d3;
